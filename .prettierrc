@@ -1,0 +1,14 @@
+{
+	"tabWidth": 4,
+	"useTabs": true,
+	"insertSpaces": true,
+	"cursorStyle": "line",
+	"lineNumbers": true,
+	"lineDecorationsWidth": 10,
+	"lineHeight": 1,
+	"fontSize": 14,
+	"singleQuote": true,
+	"htmlWhitespaceSensitivity": "css",
+	"jsxSingleQuote": true,
+	"semi": false
+}
