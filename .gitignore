@@ -136,4 +136,12 @@ dist
 # Optional stylelint cache
 
 # SvelteKit build / generate output
+<<<<<<< Updated upstream
 .svelte-kit
+=======
+.svelte-kit
+src/pre-start/env/development.env
+*.env
+src/repos/database.json
+package-lock.json
+>>>>>>> Stashed changes
