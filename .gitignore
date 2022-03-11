@@ -137,3 +137,6 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+src/pre-start/env/development.env
+*.env
+src/repos/database.json

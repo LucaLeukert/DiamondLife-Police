@@ -2,7 +2,7 @@ import cookieParser from 'cookie-parser'
 import morgan from 'morgan'
 import path from 'path'
 import helmet from 'helmet'
-import StatusCodes from 'http-status-codes'
+import StatusCodes, { UNAUTHORIZED } from 'http-status-codes'
 import express, { NextFunction, Request, Response } from 'express'
 import { engine } from 'express-handlebars'
 
@@ -12,6 +12,9 @@ import BaseRouter from './routes/api'
 import logger from 'jet-logger'
 import { cookieProps } from '@routes/auth-router'
 import { CustomError } from '@shared/errors'
+import { checkAdminPermissions } from '@routes/middleware'
+import jwtUtil from '@util/jwt-util'
+import { IUser } from '@models/user-model'
 
 const app = express()
 
@@ -65,13 +68,21 @@ app.get('/question', (_: Request, res: Response) => {
 	res.render('question')
 })
 
-app.get('/users', (req: Request, res: Response) => {
-	const jwt = req.signedCookies[cookieProps.key]
-	if (!jwt) {
-		res.redirect('/')
-	} else {
-		res.sendFile('users.html', { root: viewsDir })
+app.get(
+	'/dashboard',
+	// eslint-disable-next-line @typescript-eslint/no-misused-promises
+	checkAdminPermissions,
+	async (req: Request, res: Response) => {
+		const jwt = req.signedCookies[cookieProps.key]
+		if (!jwt) {
+			res.status(UNAUTHORIZED).send('UNAUTHORIZED')
+		}
+
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+		const user = (await jwtUtil.decode(jwt)) as IUser
+
+		res.render('dashboard', { user })
 	}
-})
+)
 
 export default app
