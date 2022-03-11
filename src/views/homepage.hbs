@@ -4,7 +4,7 @@
 <body>
 	<section class='showcase'>
 		<header>
-			<h2 class='logo'><div class="lspd-logo"></div>LSPD</h2>
+			<img src="/images/police.png" class="lspd-logo">
 			<div class='toggle'></div>
 		</header>
 
@@ -30,17 +30,17 @@
 		</ul>
 	</div>
 
-	<script>
-    const menuToggle = document.querySelector('.toggle')
-    const showcase = document.querySelector('.showcase')
-        
-    menuToggle.addEventListener('click', () => { 
-        menuToggle.classList.toggle('active')
-        showcase.classList.toggle('active') 
-    })
-
-    document.getElementById('dicord--button').addEventListener("click", (event) => {
-        window.open('https://discord.gg/9FwGgue8%27')
-    })
+	<script defer>
+    	const menuToggle = document.querySelector('.toggle')
+    	const showcase = document.querySelector('.showcase')
+	
+    	menuToggle.addEventListener('click', () => { 
+    	    menuToggle.classList.toggle('active')
+    	    showcase.classList.toggle('active')
+    	});
+	
+    	document.getElementById('dicord--button').addEventListener("click", (event) => {
+    	    window.open('https://discord.gg/9FwGgue8%27')
+    	});
 </script>
 </body>
