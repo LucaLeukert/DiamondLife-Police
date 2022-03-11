@@ -61,8 +61,8 @@ app.get('/faq', (_: Request, res: Response) => {
 	res.render('faq')
 })
 
-app.get('/question', (_: Request, res: Response) => {
-	res.render('question')
+app.get('/ticket', (_: Request, res: Response) => {
+	res.render('ticket')
 })
 
 app.get('/users', (req: Request, res: Response) => {
