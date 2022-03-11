@@ -61,8 +61,16 @@ app.get('/faq', (_: Request, res: Response) => {
 	res.render('faq')
 })
 
-app.get('/ticket', (_: Request, res: Response) => {
+app.get('/ticketsystem', (_: Request, res: Response) => {
 	res.render('ticket')
+})
+
+app.get('/thepd', (_: Request, res: Response) => {
+	res.render('thePD')
+})
+
+app.get('/contact', (_: Request, res: Response) => {
+	res.render('contact')
 })
 
 app.get('/users', (req: Request, res: Response) => {
