@@ -7,8 +7,9 @@
 			<img src="/images/police.png" class="lspd-logo">
 			<div class='toggle'></div>
 		</header>
-		<video src='/videos/police.mp4' muted loop autoplay></video>
-		<div class="overlay"></div>
+
+		<video src='/videos/background.mp4' muted loop autoplay class="background-video"></video>
+
 		<div class='text'>
 			<h2> Helfe mit!</h2>
 			<h3>Bekämpfe das Verbrechen</h3>
@@ -21,17 +22,18 @@
 
 	<div class='menu'>
 		<ul>
-			<li><a href='/thepd'>Das PD</a></li>
+			<li><a href='#'>Das PD</a></li>
 			<li><a href='/faq'>FAQ</a></li>
-			<li><a href='/ticketsystem'>Ticket System</a></li>
-			<li><a href='https://emergencyos.de/index.php'>EmergencyOS</a></li>
-			<li><a href='/contact'>Kontakt</a></li>
+			<li><a href='/ticket'>Ticket System</a></li>
+			<li><a href='#'>EmergencyOS</a></li>
+			<li><a href='#'>Kontakt</a></li>
 		</ul>
 	</div>
 
 	<script defer>
     	const menuToggle = document.querySelector('.toggle')
     	const showcase = document.querySelector('.showcase')
+		document.querySelector('.lspd-logo').setAttribute('draggable', false)
 	
     	menuToggle.addEventListener('click', () => { 
     	    menuToggle.classList.toggle('active')
@@ -39,7 +41,7 @@
     	});
 	
     	document.getElementById('dicord--button').addEventListener("click", (event) => {
-    	    window.open('https://discord.gg/9FwGgue8%27')
+    	    window.open('https://discord.gg/HzwPQwjjcd')
     	});
 </script>
 </body>
