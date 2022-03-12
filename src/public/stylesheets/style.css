@@ -59,7 +59,7 @@ header {
 }
 
 .background-video {
-	filter: blur(5px);
+	filter: blur(10px);
 	opacity: 0.8;
 }
 
@@ -108,6 +108,7 @@ header {
 	position: relative;
 	z-index: 10;
 	color: #001aff;
+	user-select: none;
 
 	text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
 		0px -5px 35px rgba(255, 255, 255, 0.3);
@@ -201,163 +202,4 @@ header {
 	height: 100%;
 	background: linear-gradient(45deg, #001aff, #00e1ff);
 	mix-blend-mode: overlay;
-}
-
-/* Hier ist der ticket.hbs Teil */
-
-.ticketTitle {
-	margin-bottom: 0;
-	display: flex;
-	background-color: #111;
-	padding: 5px 15px;
-	width: auto;
-}
-
-.ticket-lspd {
-	font-family: 'Roboto', 'Gill Sans', sans-serif;
-	text-decoration: none;
-	font-size: 64px;
-	background-color: #001aff;
-	background-image: linear-gradient(45deg, #001aff, #00e1ff);
-	background-size: 100%;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	font-weight: 900;
-	margin-left: 20%;
-	margin-right: 5%;
-	transition: color 0.3s;
-}
-
-.ticket-lspd:hover {
-	color: #006390;
-	font-weight: 800;
-}
-
-.ticket-lspd::after {
-	content: '';
-	width: 0px;
-	height: 2px;
-	display: block;
-	background-image: linear-gradient(45deg, #001aff, #00e1ff);
-	transition: 300ms;
-}
-
-.ticket-lspd:hover::after {
-	width: 100%;
-}
-
-.ticket-lspd:hover {
-	color: #006390;
-	font-weight: 800;
-}
-
-.ticket-thePD {
-	margin-top: 32px;
-	font-family: 'Roboto', 'Gill Sans', sans-serif;
-	font-size: 16px;
-	color: #03a9f4;
-	font-weight: 225;
-	margin-left: 10%;
-	transition: color 0.3s;
-}
-
-.ticket-thePD:hover {
-	color: #006390;
-	font-weight: 200;
-}
-
-.ticket--sort {
-	align-self: center;
-	font-family: 'Roboto', 'Gill Sans', sans-serif;
-	font-size: 23px;
-	color: #03a9f4;
-	font-weight: 225;
-	margin-left: 5%;
-	transition: color 0.3s;
-	text-decoration: none;
-}
-
-.ticket--sort::after {
-	content: '';
-	width: 0px;
-	height: 2px;
-	display: block;
-	background: #006390;
-	transition: 300ms;
-}
-
-.ticket--sort:hover::after {
-	width: 100%;
-}
-
-.ticket--sort:hover {
-	color: #006390;
-	font-weight: 200;
-}
-
-.ticketUnderTitle h1 {
-	margin-top: 16px;
-	display: flex;
-	padding: 5px 15px;
-	border-radius: 5px;
-	justify-content: center;
-	font-family: 'Roboto', sans-serif;
-	text-decoration: none;
-	font-size: 32px;
-	color: #111;
-	font-weight: 450;
-	text-decoration: underline;
-}
-
-.ticketUnderTitle a:hover {
-	color: #006390;
-	font-weight: 400;
-}
-
-/* Style the search box */
-#mySearch {
-	width: 100%;
-	font-size: 18px;
-	padding: 11px;
-	border: 1px solid #ddd;
-}
-
-/* Style the navigation menu */
-#myMenu {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-/* Style the navigation links */
-#myMenu li a {
-	padding: 12px;
-	text-decoration: none;
-	color: black;
-	display: block;
-}
-
-#myMenu li a:hover {
-	background-color: #eee;
-}
-
-/* faq questions design*/
-
-.faq-questions {
-	margin: 64px;
-	display: block;
-	text-align: center;
-}
-
-.faq-questions h1 {
-	font-weight: bold;
-	font-size: x-large;
-}
-
-.faq-questions p {
-	width: 100%;
-	max-width: 700px;
-	margin: 0 auto;
 }

@@ -1,0 +1,95 @@
+.container {
+	margin: 0px;
+	padding: 20px;
+	width: 100%;
+	min-height: 100%;
+	background-color: #eeeeee;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.faq {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 100%;
+	overflow-y: scroll;
+	flex-grow: 2;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+body {
+	overflow-y: hidden;
+}
+
+.search {
+	width: 20%;
+	height: 100%;
+	margin: 20px 0px 0px 20px;
+}
+
+/* Style the search box */
+#list--search {
+	width: 100%;
+	font-size: 18px;
+	padding: 11px;
+	border: 1px solid #ddd;
+}
+
+/* Style the navigation menu */
+#list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Style the navigation links */
+#list li a {
+	padding: 12px;
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
+#list li a:hover {
+	background-color: #eee;
+}
+
+/* faq questions design*/
+
+.faq-questions {
+	display: block;
+	text-align: center;
+}
+
+.faq-questions h1 {
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.faq-questions p {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.ticketUnderTitle {
+	text-align: center;
+}
+
+.ticketUnderTitle h1 {
+	font-size: 32px;
+	font-weight: 450;
+	text-decoration: underline;
+}
+
+.ticketUnderTitle a:hover {
+	color: #006390;
+	font-weight: 400;
+}

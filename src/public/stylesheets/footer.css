@@ -10,6 +10,7 @@
 	background-color: #111111;
 	box-shadow: inset -1px 3px 8px 5px #0000003a, 2px 5px 16px 0px #0000003a,
 		0px -15px 25px 0px rgba(0, 0, 0, 0.38);
+	z-index: 999;
 }
 
 .footer h1 {

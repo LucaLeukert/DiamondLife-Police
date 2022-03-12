@@ -4,11 +4,17 @@
 <body>
 	<section class='showcase'>
 		<header>
-			<img src="/images/police.png" class="lspd-logo">
+			<img src='/images/police.png' class='lspd-logo' />
 			<div class='toggle'></div>
 		</header>
 
-		<video src='/videos/background.mp4' muted loop autoplay class="background-video"></video>
+		<video
+			src='/videos/background.mp4'
+			muted
+			loop
+			autoplay
+			class='background-video'
+		></video>
 
 		<div class='text'>
 			<h2> Helfe mit!</h2>
@@ -16,32 +22,19 @@
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
 				voluptatum optio eligendi sit, eaque consequuntur sequi quisquam
 				illo possimus temporibus?</p>
-			<a href='#' id="dicord--button">Helfen</a>
+			<a href='#' id='dicord--button'>Helfen</a>
 		</div>
 	</section>
 
 	<div class='menu'>
 		<ul>
-			<li><a href='/thepd'>Das PD</a></li>
+			<li><a href='/police-department'>Das PD</a></li>
 			<li><a href='/faq'>FAQ</a></li>
-			<li><a href='/ticketsystem'>Ticket System</a></li>
+			<li><a href='/ticket-system'>Ticket System</a></li>
 			<li><a href='https://emergencyos.de/App'>EmergencyOS</a></li>
 			<li><a href='/contact'>Kontakt</a></li>
 		</ul>
 	</div>
 
-	<script defer>
-    	const menuToggle = document.querySelector('.toggle')
-    	const showcase = document.querySelector('.showcase')
-		document.querySelector('.lspd-logo').setAttribute('draggable', false)
-	
-    	menuToggle.addEventListener('click', () => { 
-    	    menuToggle.classList.toggle('active')
-    	    showcase.classList.toggle('active')
-    	});
-	
-    	document.getElementById('dicord--button').addEventListener("click", (event) => {
-    	    window.open('https://discord.gg/HzwPQwjjcd')
-    	});
-</script>
+	<script src='/scripts/homepage.js'></script>
 </body>

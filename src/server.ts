@@ -61,12 +61,12 @@ app.get('/faq', (_: Request, res: Response) => {
 	res.render('faq')
 })
 
-app.get('/ticketsystem', (_: Request, res: Response) => {
+app.get('/ticket-system', (_: Request, res: Response) => {
 	res.render('ticket')
 })
 
-app.get('/thepd', (_: Request, res: Response) => {
-	res.render('thePD')
+app.get('/police-department', (_: Request, res: Response) => {
+	res.render('policeDepartment')
 })
 
 app.get('/contact', (_: Request, res: Response) => {

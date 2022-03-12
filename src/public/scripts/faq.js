@@ -1,17 +1,8 @@
-function myFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myMenu");
-  li = ul.getElementsByTagName("li");
-
-
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
+$(document).ready(function () {
+	$('#list--search').on('keyup', function () {
+		var value = $(this).val().toLowerCase()
+		$('#list li').filter(function () {
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		})
+	})
+})
