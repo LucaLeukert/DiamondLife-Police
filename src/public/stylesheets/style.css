@@ -107,9 +107,10 @@ header {
 .text {
 	position: relative;
 	z-index: 10;
-    color: #001aff;
-    
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+	color: #001aff;
+
+	text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+		0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 .text h2 {
@@ -118,7 +119,7 @@ header {
 	line-height: 1em;
 	text-transform: uppercase;
 
-    background: linear-gradient(45deg, #001aff, #00e1ff);
+	background: linear-gradient(45deg, #001aff, #00e1ff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -129,7 +130,7 @@ header {
 	line-height: 1em;
 	text-transform: uppercase;
 
-    background: linear-gradient(45deg, #001aff, #00e1ff);
+	background: linear-gradient(45deg, #001aff, #00e1ff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -140,7 +141,7 @@ header {
 	font-weight: 400;
 	max-width: 700px;
 
-    background: linear-gradient(45deg, #001aff, #00e1ff);
+	background: linear-gradient(45deg, #001aff, #00e1ff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -313,4 +314,50 @@ header {
 .ticketUnderTitle a:hover {
 	color: #006390;
 	font-weight: 400;
+}
+
+/* Style the search box */
+#mySearch {
+	width: 100%;
+	font-size: 18px;
+	padding: 11px;
+	border: 1px solid #ddd;
+}
+
+/* Style the navigation menu */
+#myMenu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+	padding: 12px;
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
+#myMenu li a:hover {
+	background-color: #eee;
+}
+
+/* faq questions design*/
+
+.faq-questions {
+	margin: 64px;
+	display: block;
+	text-align: center;
+}
+
+.faq-questions h1 {
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.faq-questions p {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
 }

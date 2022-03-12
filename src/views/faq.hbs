@@ -1,25 +1,66 @@
 <head>
-		<title>[DML] Oft gestelle Fragen</title>
-		<link rel='stylesheet' href='stylesheets/style.css' />
-		<meta name='viewport' content='width=device-width, initial-scale=1' />
-	</head>
-	<body>
-		<div class='top'>
-			<div class='ticketTitle'>
-				<a href='/' class='ticket-lspd'>LSPD </a>
-				<a href='/thepd' class='ticket--sort'>Das PD</a>
-				<a href='/faq' class='ticket--sort'>Zum FAQ</a>
-				<a href='/ticketsystem' class='ticket--sort'>Zum Ticketsystem</a>
-				<a href='https://emergencyos.de/index.php' class='ticket--sort'> Zum OS</a>
-				<a href='/contact' class='ticket--sort'>Kontakt</a>
-			</div>
-			<div class='ticketUnderTitle'>
-				<h1 class='logo-name'>Oft gestelle Fragen</h1>
-			</div>
+	<title>[DML] Oft gestelle Fragen</title>
+	<link rel='stylesheet' href='stylesheets/style.css' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+</head>
+<body>
+	<div class='top'>
+		<div class='ticketTitle'>
+			<a href='/' class='ticket-lspd'>LSPD </a>
+			<a href='/thepd' class='ticket--sort'>Das PD</a>
+			<a href='/faq' class='ticket--sort'>Zum FAQ</a>
+			<a href='/ticketsystem' class='ticket--sort'>Zum Ticketsystem</a>
+			<a href='https://emergencyos.de/index.php' class='ticket--sort'>
+				Zum OS</a>
+			<a href='/contact' class='ticket--sort'>Kontakt</a>
 		</div>
-		<div class='main'>
-		</div>
-		<div class='footer'>
-		</div>
-	</body>
-</html>
+	</div>
+	<div class='ticketUnderTitle'>
+		<h1 class='logo-name'>Oft gestelle Fragen</h1>
+	</div>
+
+	<input
+		type='text'
+		id='mySearch'
+		onkeyup='myFunction()'
+		placeholder='Search..'
+		title='Type in a category'
+	/>
+
+	<ul id='myMenu'>
+		<li><a href='#'>HTML</a></li>
+		<li><a href='#'>CSS</a></li>
+		<li><a href='#'>JavaScript</a></li>
+		<li><a href='#'>PHP</a></li>
+		<li><a href='#'>Python</a></li>
+		<li><a href='#'>jQuery</a></li>
+		<li><a href='#'>SQL</a></li>
+		<li><a href='#'>Bootstrap</a></li>
+		<li><a href='#'>Node.js</a></li>
+	</ul>
+
+	{{! Questions  }}
+
+	<div class='faq-questions'>
+		<h1>Wie kann ich mich Bewerben?</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+			obcaecati et temporibus laboriosam exercitationem, quasi mollitia!
+			Fugiat perferendis nesciunt incidunt. Ea, ex ducimus sint ipsam
+			asperiores id nobis quibusdam eveniet assumenda ut veniam animi
+			recusandae fuga odit facere vero rem est temporibus! Veniam laborum
+			optio facere tempore aperiam. Omnis voluptates magnam natus harum
+			expedita libero itaque? Nesciunt explicabo minus eveniet porro neque
+			animi, vel quasi architecto, labore laudantium praesentium impedit
+			doloribus vero dicta. Sint blanditiis praesentium ullam eum aliquam
+			veniam, molestias assumenda harum neque iste dolorum vel voluptas
+			quis sequi beatae voluptate! Consectetur veritatis pariatur natus
+			minima architecto sequi accusamus.
+		</p>
+	</div>
+	<div class='main'>
+	</div>
+	<div class='footer'>
+	</div>
+	<script src='/scripts/faq.js'></script>
+</body>
