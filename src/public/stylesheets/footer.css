@@ -10,10 +10,7 @@
 	background-color: #111111;
 	box-shadow: inset -1px 3px 8px 5px #0000003a, 2px 5px 16px 0px #0000003a,
 		0px -15px 25px 0px rgba(0, 0, 0, 0.38);
-<<<<<<< Updated upstream
 	z-index: 999;
-=======
->>>>>>> Stashed changes
 }
 
 .footer h1 {
@@ -29,13 +26,8 @@
 }
 
 .footer .footer-logo {
-<<<<<<< Updated upstream
 	width: 20px;
 	height: 20px;
-=======
-	width: 30px;
-	height: 30px;
->>>>>>> Stashed changes
 	margin-left: 5px;
 	margin-right: 5px;
 }
