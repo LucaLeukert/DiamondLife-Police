@@ -4,6 +4,8 @@ $(document).ready(function () {
 
 		if (value === 'yung hurn') {
 			window.location = 'https://www.youtube.com/watch?v=sVjf-NlHpHQ'
+		} else if (value === 'juri') {
+			window.location = '/images/juri.png'
 		}
 
 		$('#list li').filter(function () {
